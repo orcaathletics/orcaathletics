@@ -20,15 +20,23 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: 2px solid #1f1f1f;
+      position: relative;
     }
-    header img {
+    .logo {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .logo img {
       height: 50px;
     }
     header h1 {
-      margin: 0;
+      margin: 0 auto;
       font-size: 2rem;
       font-family: 'Anton', sans-serif;
       letter-spacing: 2px;
+      text-align: center;
     }
     nav {
       text-align: center;
@@ -98,6 +106,12 @@
       header {
         flex-direction: column;
         text-align: center;
+        height: auto;
+      }
+      .logo {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
       }
       .hero h2 {
         font-size: 1.5rem;
@@ -115,7 +129,9 @@
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Orca_icon.png" alt="Orca Logo">
+    <div class="logo">
+      <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-n8YNuq8yrXLBRxJ4gvPzMxLh/user-QTj4BeI62QHo8RABUB8eIEb1/img-2e4270a3-68b6-465a-9754-9fa0c33c5434.png" alt="Orca Logo">
+    </div>
     <h1>Orca Athletics</h1>
   </header>
 
@@ -154,8 +170,8 @@
   <section class="section" id="contact">
     <h3>Contact Us</h3>
     <p>Email: support@orcaathletics.com</p>
-    <p>Instagram: @orcaathleticsco</p>
-    <iframe src="https://www.instagram.com/orcaathleticsco/embed" width="320" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+    <p>Instagram: <a href="https://www.instagram.com/orcaathleticswear/" style="color: #1e90ff; text-decoration: none;">@orcaathleticswear</a></p>
+    <iframe src="https://www.instagram.com/orcaathleticswear/embed" width="320" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
   </section>
 
   <footer>
@@ -163,4 +179,3 @@
   </footer>
 </body>
 </html>
-
