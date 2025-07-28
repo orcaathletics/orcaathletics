@@ -20,16 +20,6 @@
       align-items: center;
       justify-content: center;
       border-bottom: 2px solid #1f1f1f;
-      position: relative;
-    }
-    .logo {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .logo img {
-      height: 50px;
     }
     header h1 {
       margin: 0 auto;
@@ -71,6 +61,17 @@
       margin-bottom: 20px;
       font-size: 1.8rem;
     }
+    .shop-button {
+      margin-top: 20px;
+    }
+    .shop-button a {
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
     footer {
       background-color: #000;
       text-align: center;
@@ -82,12 +83,6 @@
       header {
         flex-direction: column;
         text-align: center;
-        height: auto;
-      }
-      .logo {
-        position: static;
-        transform: none;
-        margin-bottom: 10px;
       }
       .hero h2 {
         font-size: 1.5rem;
@@ -101,9 +96,6 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Orca_icon.png" alt="Orca Logo">
-    </div>
     <h1>Orca Athletics</h1>
   </header>
 
@@ -114,7 +106,12 @@
   </nav>
 
   <section class="hero" id="home">
-    <h2>Train Like a Predator</h2>
+    <div>
+      <h2>Train Like a Predator</h2>
+      <div class="shop-button">
+        <a href="#">Visit Store</a>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="about">
