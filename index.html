@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ascend Athletics</title>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
@@ -99,24 +100,23 @@
       font-size: 1.25rem;
       margin-bottom: 10px;
     }
-    .product p {
-      font-size: 0.95rem;
-      margin-bottom: 10px;
+    .product img {
+      width: 100%;
+      border-radius: 8px;
     }
-    .product span {
-      display: inline-block;
-      margin: 5px;
-      padding: 5px 10px;
-      background-color: #333;
-      border-radius: 4px;
+    .product select {
+      margin-top: 10px;
+      padding: 6px;
     }
-    .coming-soon {
-      margin-top: 15px;
-      background-color: #555;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 4px;
+    .snipcart-add-item {
+      margin-top: 10px;
+      background-color: #f5f5f5;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
       font-weight: bold;
+      border-radius: 4px;
     }
     footer {
       background-color: #000;
@@ -147,6 +147,7 @@
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#store">Store</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -170,13 +171,22 @@
     <div class="product-grid">
       <div class="product">
         <h4>Men's Rise Above Limits Pump Cover</h4>
-        <p>Featuring Ascend Athletics logo on front chest, and back wings with "Rise Above Limits" and our name beneath.</p>
-        <p>Available Colors:</p>
-        <span>White</span>
-        <span>Black</span>
-        <span>Neutral</span>
-        <span>Navy</span>
-        <div class="coming-soon">Coming Soon</div>
+        <img src="https://i.imgur.com/Vh0sY2k.jpeg" alt="White Shirt Front">
+        <select>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="neutral">Neutral</option>
+          <option value="navy">Navy</option>
+        </select>
+        <button class="snipcart-add-item"
+          data-item-id="pumpcover001"
+          data-item-name="Men's Rise Above Limits Pump Cover"
+          data-item-price="29.99"
+          data-item-url="/"
+          data-item-description="Pump Cover Shirt with Ascend Athletics Logo and Wings"
+          data-item-image="https://i.imgur.com/Vh0sY2k.jpeg">
+          Add to Cart
+        </button>
       </div>
     </div>
   </section>
@@ -190,5 +200,8 @@
   <footer>
     <p>&copy; 2025 Ascend Athletics. All rights reserved.</p>
   </footer>
+
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+  <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
 </body>
 </html>
