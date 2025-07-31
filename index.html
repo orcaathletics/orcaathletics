@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ascend Athletics</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
     body {
@@ -27,7 +27,7 @@
     header h1 {
       margin: 0;
       font-size: 2rem;
-      font-family: 'Russo One', sans-serif;
+      font-family: 'Anton', sans-serif;
       letter-spacing: 2px;
     }
     nav {
@@ -83,6 +83,41 @@
       line-height: 1.6;
       font-size: 1rem;
     }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+    }
+    .product {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .product h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .product span {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #333;
+      border-radius: 4px;
+    }
+    .coming-soon {
+      margin-top: 15px;
+      background-color: #555;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
     footer {
       background-color: #000;
       text-align: center;
@@ -120,7 +155,7 @@
     <div>
       <h2>Outlift. Outlast. Ascend to Greatness.</h2>
       <div class="shop-button">
-        <a href="#">Visit Store</a>
+        <a href="#store">Visit Store</a>
       </div>
     </div>
   </section>
@@ -128,6 +163,22 @@
   <section class="section" id="about">
     <h3>Our Story</h3>
     <p>Ascend Athletics was built for those who rise above limits. We create gear designed for power, discipline, and the relentless pursuit of greatness. This is where athletes level up.</p>
+  </section>
+
+  <section class="section" id="store">
+    <h3>Shop Gear</h3>
+    <div class="product-grid">
+      <div class="product">
+        <h4>Men's Rise Above Limits Pump Cover</h4>
+        <p>Featuring Ascend Athletics logo on front chest, and back wings with "Rise Above Limits" and our name beneath.</p>
+        <p>Available Colors:</p>
+        <span>White</span>
+        <span>Black</span>
+        <span>Neutral</span>
+        <span>Navy</span>
+        <div class="coming-soon">Coming Soon</div>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="contact">
