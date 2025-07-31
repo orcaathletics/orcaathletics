@@ -110,18 +110,24 @@
       background-color: #333;
       border-radius: 4px;
     }
-    .product-images img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
     footer {
       background-color: #000;
       text-align: center;
       padding: 30px 20px;
       border-top: 1px solid #1f1f1f;
       font-size: 0.9rem;
+    }
+    .product-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .product-images img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
     }
     @media (max-width: 768px) {
       header {
@@ -168,23 +174,22 @@
     <div class="product-grid">
       <div class="product">
         <h4>Men's Rise Above Limits Pump Cover</h4>
-        <p>Featuring Ascend Athletics logo on front chest, and back wings with "Rise Above Limits" and our name beneath.</p>
+        <p>Ascend Athletics logo on front chest, and back wings with "Rise Above Limits" and our name beneath.</p>
+        <div class="product-images">
+          <img src="https://i.imgur.com/Vh0sY2k.jpeg" alt="White Front">
+          <img src="https://i.imgur.com/SJjqhMM.jpeg" alt="White Back">
+          <img src="https://i.imgur.com/X5kszu5.jpeg" alt="Black Front">
+          <img src="https://i.imgur.com/EPs0GDG.jpeg" alt="Black Back">
+          <img src="https://i.imgur.com/vgxr3ln.jpeg" alt="Neutral Front">
+          <img src="https://i.imgur.com/75wsgEY.jpeg" alt="Neutral Back">
+          <img src="https://i.imgur.com/0HBsKDd.jpeg" alt="Navy Front">
+          <img src="https://i.imgur.com/CDb8E93.jpeg" alt="Navy Back">
+        </div>
         <p>Available Colors:</p>
         <span>White</span>
         <span>Black</span>
         <span>Neutral</span>
         <span>Navy</span>
-        <div class="product-images">
-          <img src="https://i.imgur.com/MtW5hj6.jpeg" alt="Pump Cover 1">
-          <img src="https://i.imgur.com/b7AvwP4.jpeg" alt="Pump Cover 2">
-          <img src="https://i.imgur.com/Zj5a2Zj.jpeg" alt="Pump Cover 3">
-          <img src="https://i.imgur.com/Y1CkYFu.jpeg" alt="Pump Cover 4">
-          <img src="https://i.imgur.com/T2HDvQk.jpeg" alt="Pump Cover 5">
-          <img src="https://i.imgur.com/ljbrdsa.jpeg" alt="Pump Cover 6">
-          <img src="https://i.imgur.com/dAeV1Pv.jpeg" alt="Pump Cover 7">
-          <img src="https://i.imgur.com/C3Uqzb4.jpeg" alt="Pump Cover 8">
-          <img src="https://i.imgur.com/SJjqhMM.jpeg" alt="Pump Cover 9">
-        </div>
       </div>
     </div>
   </section>
@@ -200,4 +205,3 @@
   </footer>
 </body>
 </html>
-
